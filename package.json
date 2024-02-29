@@ -1,0 +1,23 @@
+{
+  "name": "odin-restaurant",
+  "version": "1.0.0",
+  "description": "dynamically rendered restaurant homepage (for the odin project)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lucaslija/odin-restaurant.git"
+  },
+  "author": "lucas lija",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lucaslija/odin-restaurant/issues"
+  },
+  "homepage": "https://github.com/lucaslija/odin-restaurant#readme",
+  "devDependencies": {
+    "webpack": "^5.90.3",
+    "webpack-cli": "^5.1.4"
+  }
+}
