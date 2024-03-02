@@ -6,7 +6,6 @@ import toast from "./images/french-toast.jpg";
 import waiter from "./images/smiling-waiter.jpg";
 import roof from "./images/tin-roof.jpg";
 
-const content = document.getElementById("content");
 const contentArray = [];
 
 // Splash
@@ -73,7 +72,7 @@ guestQuotes.textContent = "Our guests love the Tin Roof.";
 const reviewCards = document.createElement("div");
 reviewCards.id = "review-cards";
 
-reviewArray = [
+const reviewArray = [
   {
     text: "I love their jam so much I bought some to keep at home. But the vibes are so good in the restaurant, I swear it tastes even better there!",
     name: "Greg Jameson"
@@ -88,7 +87,7 @@ reviewArray = [
   }
 ]
 
-for (i = 0; i < 3; i++) {
+for (let i = 0; i < 3; i++) {
   const card = document.createElement("div");
   card.classList.add("card");
 
@@ -111,13 +110,13 @@ contentArray.push(reviews);
 
 // Footer 
 
-footer = document.createElement("footer");
-copyright = document.createElement("p");
+const footer = document.createElement("footer");
+const copyright = document.createElement("p");
 copyright.id = "copyright";
-copyright.textContent = "&copy; Tin Roof Cafe 2024 | site by ";
-githubLink = document.createElement("a");
+copyright.innerHTML = "&copy; Tin Roof Cafe 2024 | site by &nbsp;";
+const githubLink = document.createElement("a");
 githubLink.href = "https://lucaslija.github.io";
-githubLink.textContent = "lucas lija";
+githubLink.innerText = "lucas lija";
 footer.appendChild(copyright);
 footer.appendChild(githubLink);
 contentArray.push(footer);
