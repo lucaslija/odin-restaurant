@@ -1,6 +1,5 @@
-import homeContent from "./home.js";
+import setHomeContent from "./home.js";
 
 const content = document.getElementById("content");
-console.log(homeContent);
-console.log(content);
+const homeContent = setHomeContent();
 content.append(...homeContent);
