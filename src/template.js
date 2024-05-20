@@ -27,7 +27,7 @@ splash.appendChild(subtitle);
 const footer = document.createElement("footer");
 const copyright = document.createElement("p");
 copyright.id = "copyright";
-copyright.innerHTML = "&copy; Tin Roof Cafe 2024 | site by &nbsp;";
+copyright.innerHTML = "&copy; Tin Roof Cafe 2024 | site by&nbsp;";
 const githubLink = document.createElement("a");
 githubLink.href = "https://lucaslija.github.io";
 githubLink.innerText = "lucas lija";

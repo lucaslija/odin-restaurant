@@ -28,6 +28,11 @@ button {
   font-weight: bold;
 }
 
+button.active {
+  background-color: aliceblue;
+  color: rebeccapurple;
+}
+
 nav {
   background-color: rebeccapurple;
   display: flex;
