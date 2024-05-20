@@ -67,7 +67,7 @@ const reviews = document.createElement("div");
 reviews.id = "reviews";
 
 const guestQuotes = document.createElement("h3");
-guestQuotes.textContent = "Our guests love the Tin Roof!";
+guestQuotes.textContent = "Our guests love the Tin Roof.";
 
 const reviewCards = document.createElement("div");
 reviewCards.id = "review-cards";

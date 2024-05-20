@@ -1,6 +1,6 @@
-import contentArray from "./home.js";
+import homeContent from "./home.js";
 
 const content = document.getElementById("content");
-console.log(contentArray);
+console.log(homeContent);
 console.log(content);
-content.append(...contentArray);
+content.append(...homeContent);
