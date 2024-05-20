@@ -1,41 +1,38 @@
 import "./styles.css";
 
-import icon from "./images/shed-icon.png";
+import { splash, footer } from "./template.js";
+
 import dog from "./images/bandana-dog.jpg";
 import toast from "./images/french-toast.jpg";
 import waiter from "./images/smiling-waiter.jpg";
 import roof from "./images/tin-roof.jpg";
 
 
-function setHomeContent() {
+function setHome(contentElement) {
+  console.log("setHome called");
+
+  contentElement.innerHTML = "";
  
   const contentArray = [];
 
   // Splash
-
-  const splash = document.createElement("div");
-  splash.id = "splash";
-
-  const splashLogo = document.createElement("div");
-  splashLogo.id = "splash-logo";
-  const iconImg = document.createElement("img");
-  iconImg.src = icon;
-  iconImg.alt = "Tin Roof Cafe Logo";
-  iconImg.classList.add("logo");
-  const name = document.createElement("h1");
-  name.textContent = "The Tin Roof Cafe";
-  splashLogo.appendChild(iconImg);
-  splashLogo.appendChild(name);
-
-  const subtitle = document.createElement("h2");
-  subtitle.textContent = "brunch for humans (and their furry friends) since 2000";
-
-  splash.appendChild(splashLogo);
-  splash.appendChild(subtitle);
   contentArray.push(splash);
 
   // Photogrid
+  contentArray.push(getPhotoGrid());
 
+  // Reviews
+  contentArray.push(getReviews());
+
+  // Footer
+  contentArray.push(footer);
+
+  // Append to DOM
+  contentElement.append(...contentArray);
+}
+
+
+function getPhotoGrid() {
   const photoGrid = document.createElement("div");
   photoGrid.id = "photogrid";
 
@@ -62,10 +59,12 @@ function setHomeContent() {
   const gridImages = [dogImg, toastImg, serverImg, roofImg];
 
   photoGrid.append(...gridImages);
-  contentArray.push(photoGrid);
 
-  // Reviews
+  return photoGrid;
+}
 
+
+function getReviews() {
   const reviews = document.createElement("div");
   reviews.id = "reviews";
 
@@ -109,24 +108,8 @@ function setHomeContent() {
 
   reviews.appendChild(guestQuotes);
   reviews.appendChild(reviewCards);
-  contentArray.push(reviews);
 
-  // Footer 
-
-  const footer = document.createElement("footer");
-  const copyright = document.createElement("p");
-  copyright.id = "copyright";
-  copyright.innerHTML = "&copy; Tin Roof Cafe 2024 | site by&nbsp;";
-  const githubLink = document.createElement("a");
-  githubLink.href = "https://lucaslija.github.io";
-  githubLink.innerText = "lucas lija";
-  footer.appendChild(copyright);
-  footer.appendChild(githubLink);
-  contentArray.push(footer);
-
-  // RETURN
-  
-  return contentArray;
+  return reviews;
 }
 
-export default setHomeContent;
+export default setHome;
