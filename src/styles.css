@@ -77,10 +77,9 @@ img.logo {
 }
 
 #photogrid {
-  display: grid;
-  grid-template-areas: "1 2" "3 4";
-  gap: 1rem;
-  padding: .5rem;
+  display: flex;
+  gap: 2rem;
+  padding: 2rem;
 }
 
 .photo-square {
@@ -102,7 +101,7 @@ img.logo {
 
 #reviews h3 {
   font-family: "Courier New", Courier, monospace;
-  text-decoration: underline;
+  font-size: 2rem;
 }
 
 #review-cards {
@@ -120,10 +119,16 @@ img.logo {
   flex-direction: column;
   justify-content: space-between;
   gap: 1rem;
+  border-radius: 1rem;
+  line-height: 1.5;
 }
 
 .card p {
   font-style: italic;
+}
+
+.name {
+  font-size: 1.5rem;
 }
 
 #contact {
@@ -151,17 +156,72 @@ img.logo {
   background-color: white;
   padding: 1rem;
   border-radius: 1rem;
+  font-size: 2rem;
 }
 
 .contact-label {
   background-color: rebeccapurple;
   color: aliceblue;
-  font-weight: bold;
 }
 
 #contact-info p {
   padding: 1rem;
   border-radius: 1rem;
+}
+
+#photos {
+  display: flex;
+  padding: 2rem;
+  gap: 2rem;
+}
+
+#photos img {
+  height: 20vw;
+  width: 20vw;
+  object-fit: cover;
+}
+
+#menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+#menu-title, #menu-hours {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+#menu-info {
+  font-style: italic;
+}
+
+#menu-cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.menu-card {
+  width: 60vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.card-title {
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.card-cost {
+  font-weight: bold;
 }
 
 footer {

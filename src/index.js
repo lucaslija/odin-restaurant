@@ -2,9 +2,9 @@ import setHome from "./home.js";
 import setContact from "./contact.js";
 import setMenu from "./menu.js";
 
-const homeBtn = document.getElementById("home");
-const contactBtn = document.getElementById("contact");
-const menuBtn = document.getElementById("menu");
+const homeBtn = document.getElementById("home-btn");
+const contactBtn = document.getElementById("contact-btn");
+const menuBtn = document.getElementById("menu-btn");
 const btnArray = [homeBtn, contactBtn, menuBtn];
 
 const content = document.getElementById("content");
