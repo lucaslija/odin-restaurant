@@ -40,17 +40,17 @@ function getContact() {
   contactInfo.id = "contact-info";
 
   const phoneLabel = document.createElement("p");
-  phoneLabel.classList.add = "contact-label";
+  phoneLabel.classList.add("contact-label");
   phoneLabel.textContent = "by phone:"
   const phone = document.createElement("p");
   phone.textContent = "(503) 753 2047";
   const emailLabel = document.createElement("p");
-  emailLabel.classList.add = "contact-label";
+  emailLabel.classList.add("contact-label");
   emailLabel.textContent = "by email:";
   const email = document.createElement("p");
   email.textContent = "tinroofcafe@totally-real-email.com";
   const addressLabel = document.createElement("p");
-  addressLabel.classList.add = "contact-label";
+  addressLabel.classList.add("contact-label");
   addressLabel.textContent = "by snail mail:"
   const address = document.createElement("p");
   address.textContent = "1111 NS 11st Ave, Portland, OR 97XXX";
